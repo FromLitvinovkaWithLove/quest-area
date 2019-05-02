@@ -1,0 +1,139 @@
+.fa-pencil-alt{
+    color: #E76868; 
+    margin-left: 1%;
+    margin-bottom: 4%;
+}
+.fa-angle-right{
+    font-size: 2em;
+}
+main{
+    width: 64vw;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.aboutUser{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutUser>div:first-child{
+    max-width: 400px;
+    min-width: 150px;
+    width: 15vw;
+    height: auto;
+    background: lightgray;
+}
+.aboutUser>div:last-child{
+    min-width: 220px;
+    max-width: 500px;
+    width: 70%;
+}
+.aboutUser>div:last-child>section{
+    display: flex;
+    align-items:flex-end;
+}
+
+.aboutUser>div:last-child>section>h2{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 3%;
+}
+
+.aboutUser>div:last-child>p{
+    margin-bottom: 2%;
+}
+
+.aboutUser>div:last-child>h3{
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-top: 6vh;
+    margin-bottom: 1%;
+}
+
+.awards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    min-width: 200px;
+    max-width: 13rem;
+}
+.awards li{
+    display: flex;
+    align-items: center;
+}
+.awards div{
+    background: lightgrey;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 6%
+
+}
+main>section>header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15vh;
+    margin-bottom: 8vh;
+}
+
+section>header>h3{
+    font-size: 1.3rem;
+}
+
+section>header>p{
+    color: lightgrey;
+    font-weight: bold;
+}
+
+.cards_list{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.listNumber{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5%;
+}
+.listNumber ul{
+    display: flex;
+    flex-wrap: nowrap;
+}
+ .listNumber a{
+    margin: 0.1em;
+ }
+
+ @media all and (max-width:700px){
+    .aboutUser{
+    flex-direction: column;
+    }
+    .aboutUser>div:first-child{
+        height: 30vh;
+        width: 70%;
+        margin-bottom: 5%;
+    }
+    .aboutUser>div{
+        width: 90%;
+    }
+ }
+ @media all and (max-width:900px){
+    .aboutUser>div:last-child{
+        width: 55%;
+    }
+ }
+
+ @media all and (max-width:400px){
+    main>section>header{
+        flex-direction: column;
+    }
+    section>header>h3{
+        margin-bottom: 1%;
+    }
+ }
